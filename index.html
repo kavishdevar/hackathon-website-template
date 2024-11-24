@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Event Name</title>
+</head>
+<body>
+    <div class="app-bar">
+        <h1 class="title">Event Name</h1>
+    </div>
+    <div class="background"></div>
+    <main>
+        <image src="https://assets.hackclub.com/flag-orpheus-top.svg" class="orpheus-flag"></image>
+        <div class="front">
+            <h1 class="title">
+                Event Name
+            </h1>
+            <h2 class="caption">
+                Caption
+            </h2>
+            <h3 class="information">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi porro est eveniet cum quisquam vel aspernatur error molestias delectus, temporibus assumenda consequuntur, voluptates quia impedit. Molestias id laborum nulla doloremque.
+            </h3>
+            <div class="signup">
+                <input id="signup-input" type="text" class="email" placeholder="Email Address">
+                <button id="signup-button" onclick="signup()">Sign Up</button>
+            </div>
+        </div>
+        <div class="details">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt odit sit voluptate iste quam officia error sint, laborum in repellendus tenetur excepturi similique libero commodi cumque? Repudiandae optio provident necessitatibus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni quidem beatae impedit, iusto, perspiciatis vel non culpa est incidunt vitae eaque exercitationem omnis neque sit perferendis officiis sed. Officia, accusantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt odit sit voluptate iste quam officia error sint, laborum in repellendus tenetur excepturi similique libero commodi cumque? Repudiandae optio provident necessitatibus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni quidem beatae impedit, iusto, perspiciatis vel non culpa est incidunt vitae eaque exercitationem omnis neque sit perferendis officiis sed. Officia, accusantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt odit sit voluptate iste quam officia error sint, laborum in repellendus tenetur excepturi similique libero commodi cumque? Repudiandae optio provident necessitatibus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni quidem beatae impedit, iusto, perspiciatis vel non culpa est incidunt vitae eaque exercitationem omnis neque sit perferendis officiis sed. Officia, accusantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt odit sit voluptate iste quam officia error sint, laborum in repellendus tenetur excepturi similique libero commodi cumque? Repudiandae optio provident necessitatibus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni quidem beatae impedit, iusto, perspiciatis vel non culpa est incidunt vitae eaque exercitationem omnis neque sit perferendis officiis sed. Officia, accusantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt odit sit voluptate iste quam officia error sint, laborum in repellendus tenetur excepturi similique libero commodi cumque? Repudiandae optio provident necessitatibus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni quidem beatae impedit, iusto, perspiciatis vel non culpa est incidunt vitae eaque exercitationem omnis neque sit perferendis officiis sed. Officia, accusantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt odit sit voluptate iste quam officia error sint, laborum in repellendus tenetur excepturi similique libero commodi cumque? Repudiandae optio provident necessitatibus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni quidem beatae impedit, iusto, perspiciatis vel non culpa est incidunt vitae eaque exercitationem omnis neque sit perferendis officiis sed. Officia, accusantium!
+            </p>
+        </div>
+    </main>
+    <script>
+        function signup() {
+            email = document.getElementById('signup-input').value
+            email = encodeURIComponent(email)
+            window.location.href = 'https://airtable.com/apptaIuqOvOYiV4Y0/pagVhhNdnmGwzmiAB/form?prefill_Email=' + email
+        }
+        window.addEventListener('onscroll', function() {
+            const title = document.querySelector('.title');
+            const appBar = document.querySelector('.app-bar');
+            console.log(window.scrollY);
+            if (window.scrollY > 50) {
+                appBar.style.display = 'block';
+            } else {
+                appBar.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
